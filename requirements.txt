@@ -1,3 +1,4 @@
+ipywidgets>=7.6.0
 pandas>=1.2.0
 numpy>=1.19.0
 statsmodels>=0.12.0
