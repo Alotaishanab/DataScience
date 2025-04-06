@@ -1,0 +1,63 @@
+# Transfer Entropy Analysis in the Energy Sector
+
+This repository contains the final project submission for **COMP0047: Data Science**, as part of the **MSc Artificial Intelligence and Data Engineering** program at UCL. The project investigates directional information flow in the energy sector using **Transfer Entropy (TE)** estimated via both discrete binning and $k$-nearest neighbors (kNN) methods.
+
+## 📁 Project Structure
+
+```
+.
+├── notebooks/                  # Jupyter notebooks for TE analysis and results
+├── data/
+│   ├── raw/                   # Unprocessed raw datasets
+│   └── processed/             # Cleaned and standardized datasets
+├── src/
+│   ├── data_processing.py     # Data cleaning, log return transformation, standardization
+│   └── te_estimators.py       # TE estimation functions (discrete & kNN)
+├── plots/
+│   ├── eda/                   # Exploratory data analysis plots
+│   └── te/                    # Transfer entropy plots (rolling TE, surrogate tests, networks)
+├── requirements.txt           # Python dependencies
+└── report/
+    └── report.pdf             # Final report (LaTeX compiled)
+```
+
+## ⚙️ Setup Instructions
+
+Follow these steps to set up and run the analysis:
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Alotaishanab/DataScience.git
+   cd DataScience
+   ```
+
+2. **Create and activate a virtual environment**:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate    # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies**:
+   ```bash
+   pip3 install -r requirements.txt
+   ```
+
+4. **Run the notebooks**:
+   ```bash
+   cd notebooks
+   jupyter notebook
+   ```
+   Open the main notebook and run all cells sequentially to reproduce the results and figures.
+
+## 📝 Notes
+
+- Cleaned datasets: `data/processed/`
+- Raw input files: `data/raw/`
+- Data preparation: `src/data_processing.py`
+- TE estimation logic: `src/te_estimators.py`
+- Final visualizations: `plots/eda/` and `plots/te/`
+- Final report: `report/report.pdf`
+
+---
+
+This project highlights the power of Transfer Entropy in uncovering nonlinear, directional relationships within financial time series, with a focus on the energy sector.

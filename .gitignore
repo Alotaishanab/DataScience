@@ -108,3 +108,13 @@ docs/_build/
 .mypy_cache/
 .dmypy.json
 dmypy.json
+
+
+# Virtual environment directories 
+env/
+venv/
+ENV/
+.env/
+.venv/
+env.bak/
+venv.bak/
